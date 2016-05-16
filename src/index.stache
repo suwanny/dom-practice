@@ -3,14 +3,38 @@
     <title>{{title}}</title>
   </head>
   <body>
+    <can-import from="bootstrap/less/bootstrap.less!" />
     <can-import from="dom-practice/styles.less!" />
     <can-import from="dom-practice/app" export-as="viewModel" />
 
     <h1>{{message}}</h1>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <h1 class="page-header text-center">
+            <img src="http://donejs.com/static/img/donejs-logo-white.svg"
+                alt="DoneJS logo" style="width: 100%;" />
+            <br>Chat
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div draggable="true" class="label">DIV1</div>
+    <div draggable="true" class="label">DIV2</div>
+    <div draggable="true" class="label">DIV3</div>
+    <div draggable="true" class="label">DIV4</div>
+    <div draggable="true" class="label">DIV5</div>
+
+
     {{#switch env.NODE_ENV}}
       {{#case "production"}}
-        <script src="{{joinBase 'node_modules/steal/steal.production.js'}}"  main="dom-practice/index.stache!done-autorender"></script>
+        <script
+          src="{{joinBase 'node_modules/steal/steal.production.js'}}"
+          main="dom-practice/index.stache!done-autorender"
+        >
+        </script>
       {{/case}}
       {{#default}}
         <script src="/node_modules/steal/steal.js"></script>
