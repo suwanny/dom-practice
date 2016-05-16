@@ -1,2 +1,0 @@
-# dom-practice
-DOM Practice
