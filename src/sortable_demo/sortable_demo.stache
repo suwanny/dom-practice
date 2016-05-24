@@ -1,0 +1,9 @@
+<can-import from="dom-practice/demo_card/" />
+
+<div id='sortablePanels'>
+  <demo-card>CARD 1</demo-card>
+  <demo-card>CARD 2</demo-card>
+  <demo-card>CARD 3</demo-card>
+  <demo-card>CARD 4</demo-card>
+  <demo-card>CARD 5</demo-card>
+</div>

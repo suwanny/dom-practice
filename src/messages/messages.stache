@@ -1,0 +1,5 @@
+<h5><a href="{{routeUrl page='home'}}">Home</a></h5>
+<p>{{message}}</p>
+
+<can-import from="dom-practice/sortable_demo/" />
+<demo-sortable />
