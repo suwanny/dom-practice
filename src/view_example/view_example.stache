@@ -1,0 +1,2 @@
+<h1>Hello, View Example!!!</h1>
+<p>{{message}}</p>
