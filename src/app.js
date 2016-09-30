@@ -1,3 +1,4 @@
+import can from "can/";
 import Map from "can/map/";
 import route from "can/route/";
 import 'can/map/define/';
